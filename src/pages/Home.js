@@ -1,9 +1,10 @@
 import React from "react";
+import BlogPost from "../layout/BlogPost";
 
 const Home = () => {
     return (
-        <div>
-            <h1>Kotha</h1>
+        <div className="mt-20">
+            <BlogPost></BlogPost>
         </div>
     );
 };
