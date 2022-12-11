@@ -12,11 +12,12 @@ const DashboardTable = () => {
     }, [dispatch]);
 
     return (
-        <div className="">
-            <table className="table w-full ">
+        <div>
+            <table className="table">
                 <thead>
                     <tr>
                         <th>Post title</th>
+                        <th>Post</th>
                         <th>Author</th>
                         <th>Edit</th>
                         <th>Delete</th>
@@ -26,6 +27,7 @@ const DashboardTable = () => {
                     {blogs.map((blog) => (
                         <tr key={blog._id}>
                             <td>{blog.title}</td>
+                            <td>{blog.description.slice(1, 50)}.....</td>
                             <td>{blog.name}</td>
                             <td>
                                 <svg
