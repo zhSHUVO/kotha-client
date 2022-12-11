@@ -1,8 +1,12 @@
-import { ADD_CONTENT, DELETE_CONTENT, LOAD_CONTENT } from "../actionTypes/actionTypes";
+import {
+    ADD_CONTENT,
+    DELETE_CONTENT,
+    GET_CONTENT,
+} from "../actionTypes/actionTypes";
 
 export const loadContent = (blogData) => {
     return {
-        type: LOAD_CONTENT,
+        type: GET_CONTENT,
         payload: blogData,
     };
 };
@@ -14,10 +18,9 @@ export const addContent = (blog) => {
     };
 };
 
-
-export const deleteBlog = (blog) =>{
+export const deleteBlog = (blog) => {
     return {
         type: DELETE_CONTENT,
         payload: blog,
     };
-}
+};

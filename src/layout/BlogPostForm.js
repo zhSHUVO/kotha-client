@@ -1,7 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import { useDispatch, useSelector } from "react-redux";
-import { addContent } from "../redux/actions/blogActions";
+import { useDispatch } from "react-redux";
+import addBlog from "../redux/thunk/blogs/addBlog";
 
 const BlogPostForm = () => {
     const dispatch = useDispatch();
@@ -20,11 +20,9 @@ const BlogPostForm = () => {
             tags: [blog.tag1, blog.tag2, blog.tag3],
         };
 
-        dispatch(addContent(blogData));
+        console.log(blogData);
+        dispatch(addBlog(blogData));
     };
-
-    const state = useSelector((state) => state);
-    // console.log(state);
 
     return (
         <div className="flex flex-col lg:flex-row justify-center items-center">

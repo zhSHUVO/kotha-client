@@ -1,20 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { deleteBlog } from "../redux/actions/blogActions";
+import fetchBlogs from "../redux/thunk/blogs/fetchBlogs";
 
 const DashboardTable = () => {
+    const blogs = useSelector((state) => state.blogs);
     const dispatch = useDispatch();
 
-    const blogs = useSelector((state) => state.blogs);
-    console.log(blogs);
+    useEffect(() => {
+        dispatch(fetchBlogs());
+    }, [dispatch]);
 
     return (
         <div className="">
             <table className="table w-full ">
                 <thead>
                     <tr>
-                        <th>Name</th>
                         <th>Post title</th>
+                        <th>Author</th>
                         <th>Edit</th>
                         <th>Delete</th>
                     </tr>
@@ -22,8 +25,8 @@ const DashboardTable = () => {
                 <tbody>
                     {blogs.map((blog) => (
                         <tr key={blog._id}>
-                            <td>{blog.name}</td>
                             <td>{blog.title}</td>
+                            <td>{blog.name}</td>
                             <td>
                                 <svg
                                     stroke="currentColor"

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import BlogPost from "../layout/BlogPost";
-import fetchBlogs from "../redux/thunk/blogs/blogs";
+import fetchBlogs from "../redux/thunk/blogs/fetchBlogs";
 
 const Home = () => {
     const blogs = useSelector((state) => state.blogs);

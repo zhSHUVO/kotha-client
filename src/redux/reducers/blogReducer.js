@@ -2,7 +2,6 @@ import {
     ADD_CONTENT,
     DELETE_CONTENT,
     GET_CONTENT,
-    LOAD_CONTENT,
     UPDATE_CONTENT,
 } from "../actionTypes/actionTypes";
 
@@ -12,12 +11,6 @@ const initialState = {
 
 const blogReducer = (state = initialState, action) => {
     switch (action.type) {
-        case LOAD_CONTENT:
-            return {
-                ...state,
-                blogs: action.payload,
-            };
-
         case ADD_CONTENT:
             return {
                 ...state,
@@ -25,7 +18,10 @@ const blogReducer = (state = initialState, action) => {
             };
 
         case GET_CONTENT:
-            return {};
+            return {
+                ...state,
+                blogs: action.payload,
+            };
 
         case UPDATE_CONTENT:
             return {};
