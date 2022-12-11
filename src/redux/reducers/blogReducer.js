@@ -30,7 +30,7 @@ const blogReducer = (state = initialState, action) => {
             return {
                 ...state,
                 blogs: state.blogs.filter(
-                    (blog) => blog.name !== action.payload.name
+                    (blog) => blog._id !== action.payload
                 ),
             };
 
