@@ -12,9 +12,12 @@ const BlogPost = ({ blog }) => {
                         <div className="flex flex-row">
                             <p>Tags: </p>
                             <div>
-                                {blog.tag.map((tag) => {
+                                {blog.tags.map((tag) => {
                                     return (
-                                        <span key={tag} className="badge ml-2 mr-2">
+                                        <span
+                                            key={tag}
+                                            className="badge ml-2 mr-2"
+                                        >
                                             {tag}
                                         </span>
                                     );

@@ -6,7 +6,7 @@
         "name": "alizée",
         "title": "Associate Professor",
         "post": "Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.",
-        "tag": ["nulla", "facilisi", "cras"]
+        "tags": ["nulla", "facilisi", "cras"]
     },
     {
         "_id": {
@@ -15,7 +15,7 @@
         "name": "almérinda",
         "title": "Chemical Engineer",
         "post": "Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id",
-        "tag": ["nulla", "facilisi", "cras"]
+        "tags": ["nulla", "facilisi", "cras"]
     },
     {
         "_id": {
@@ -24,7 +24,7 @@
         "name": "åsa",
         "title": "Director of Sales",
         "post": "Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris. Donec posuere metus vitae ipsum. Aliquam non mauris.",
-        "tag": ["nulla", "facilisi", "cras"]
+        "tags": ["nulla", "facilisi", "cras"]
     },
     {
         "_id": {
@@ -33,7 +33,7 @@
         "name": "marie-françoise",
         "title": "Senior Editor",
         "post": "Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.\n\nCras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.\n\nProin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
-        "tag": ["nullad", "facilisi", "cras"]
+        "tags": ["nullad", "facilisi", "cras"]
     },
     {
         "_id": {
@@ -42,7 +42,7 @@
         "name": "régine",
         "title": "Design Engineer",
         "post": "Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.\n\nProin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.\n\nAenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.",
-        "tag": ["nulla", "facildisi", "cras"]
+        "tags": ["nulla", "facildisi", "cras"]
     },
     {
         "_id": {
@@ -51,7 +51,7 @@
         "name": "stévina",
         "title": "Quality Control Specialist",
         "post": "Fusce consequat. Nulla nisl. Nunc nisl.\n\nDuis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.\n\nIn hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.",
-        "tag": ["nulla", "facilisi", "cdras"]
+        "tags": ["nulla", "facilisi", "cdras"]
     },
     {
         "_id": {
@@ -60,6 +60,6 @@
         "name": "thérèse",
         "title": "Teacher",
         "post": "Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.\n\nQuisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.",
-        "tag": ["nsulla", "facilisi", "cras"]
+        "tags": ["nsulla", "facilisi", "cras"]
     }
 ]
