@@ -17,7 +17,9 @@ const BlogPostForm = () => {
             name: blog.name,
             title: blog.title,
             description: blog.description,
-            tags: [blog.tag1, blog.tag2, blog.tag3],
+            tag1: blog.tag1,
+            tag2: blog.tag2,
+            tag3: blog.tag3,
         };
 
         console.log(blogData);

@@ -2,11 +2,13 @@ import {
     ADD_CONTENT,
     DELETE_CONTENT,
     GET_CONTENT,
+    LOAD_SPECIFIC_CONTENT,
     UPDATE_CONTENT,
 } from "../actionTypes/actionTypes";
 
 const initialState = {
     blogs: [],
+    specificBlog: [],
 };
 
 const blogReducer = (state = initialState, action) => {
@@ -23,8 +25,17 @@ const blogReducer = (state = initialState, action) => {
                 blogs: action.payload,
             };
 
+        case LOAD_SPECIFIC_CONTENT:
+            return {
+                ...state,
+                specificBlog: action.payload,
+            };
+
         case UPDATE_CONTENT:
-            return {};
+            return {
+                ...state,
+                blogs: [...state.blogs, action.payload],
+            };
 
         case DELETE_CONTENT:
             return {
