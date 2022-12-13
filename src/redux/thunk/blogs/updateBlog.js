@@ -5,7 +5,7 @@ const updateBlog = (updatedBlogData) => {
         const res = await fetch(
             `http://localhost:5000/api/v1/blog/${updatedBlogData._id}`,
             {
-                method: "PATCH",
+                method: "PUT",
                 body: JSON.stringify(updatedBlogData),
                 headers: {
                     "Content-type": "application/json",
